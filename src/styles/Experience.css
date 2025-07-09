@@ -1,0 +1,130 @@
+.experience-section {
+    padding: 60px 20px;
+    background-color: #0a0d1a;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .experience-title {
+    text-align: center;
+    color: #00ffff;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .timeline {
+    position: relative;
+    margin-left: 40px;
+    border-left: 2px solid #00ffff44;
+    padding-left: 25px;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    left: -45px;
+    top: 0;
+    background: #00ffff;
+    color: #0a0d1a;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+  
+  .timeline-content {
+    background: #121428;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ffff33;
+  }
+  
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .timeline-header h3 {
+    color: #00ffff;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .timeline-date {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
+  .timeline-org {
+    color: #ff4f81;
+    margin: 0.4rem 0 0.7rem 0;
+    font-weight: 500;
+  }
+  
+  .timeline-content ul {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+  
+  .timeline-content li {
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .experience-section {
+      padding: 40px 15px;
+    }
+  
+    .timeline {
+      margin-left: 10px;
+      padding-left: 15px;
+    }
+  
+    .timeline-icon {
+      left: -30px;
+      padding: 8px;
+    }
+  
+    .timeline-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .timeline-header h3 {
+      font-size: 1.1rem;
+    }
+  
+    .timeline-date {
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+  
+    .timeline-content {
+      padding: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .experience-title {
+      font-size: 1.5rem;
+    }
+  
+    .timeline-header h3 {
+      font-size: 1rem;
+    }
+  
+    .timeline-content {
+      padding: 1rem;
+    }
+  }
+  

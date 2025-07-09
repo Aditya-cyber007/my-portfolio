@@ -1,0 +1,131 @@
+.about-section {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom right, #1b1b2f, #121212);
+  color: #ffffff;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+.about-content p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.education-section h3 {
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 30px;
+}
+
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.edu-card {
+  background-color: #1b1d2b;
+  color: #e0e0e0;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
+}
+
+.edu-card h4 {
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+.edu-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.edu-card .highlight {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+
+/* Optional fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.education-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.education-section h3 {
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 30px;
+}
+
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.edu-card {
+  background-color: #1b1d2b;
+  color: #e0e0e0;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
+}
+
+.edu-card h4 {
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+.edu-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.edu-card .highlight {
+  color: #00ffcc;
+  font-weight: bold;
+}
