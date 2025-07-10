@@ -44,7 +44,7 @@ function Hero() {
           <FaLinkedin />
         </a>
         <a
-          href="mailto:adityapratap620@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=adityapratap620@gmail.com"
           className="social-icon"
         >
           <FaEnvelope />
