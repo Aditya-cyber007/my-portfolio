@@ -23,7 +23,15 @@ const Header = () => {
         <a href="#projects" onClick={closeMenu}>Projects</a>
         <a href="#experiences" onClick={closeMenu}>Experience</a>
         <a href="#contact" onClick={closeMenu}>Contact</a>
-        <a href="/MyResume.pdf" target="_blank" className="resume-button" onClick={closeMenu}>Resume</a>
+        <a
+          href={`${process.env.PUBLIC_URL}/MyResume.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-button"
+          onClick={closeMenu}
+        >
+          Resume
+        </a>
       </nav>
 
       <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={handleToggle}>
