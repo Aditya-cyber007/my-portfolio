@@ -45,6 +45,8 @@ function Hero() {
         </a>
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=adityapratap620@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="social-icon"
         >
           <FaEnvelope />
