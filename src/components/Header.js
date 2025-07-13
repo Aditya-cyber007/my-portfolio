@@ -24,7 +24,7 @@ const Header = () => {
         <a href="#experiences" onClick={closeMenu}>Experience</a>
         <a href="#contact" onClick={closeMenu}>Contact</a>
         <a
-          href={`${process.env.PUBLIC_URL}/MyResume.pdf`}
+          href={`${process.env.PUBLIC_URL}/AdityaSinghResume.pdf`}
           target="_blank"
           rel="noopener noreferrer"
           className="resume-button"

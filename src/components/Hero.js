@@ -32,7 +32,7 @@ function Hero() {
 
       <div className="hero-buttons">
         <a href="#projects" className="btn primary">View My Work</a>
-        <a href={`${process.env.PUBLIC_URL}/MyResume.pdf`} download className="btn secondary">
+        <a href={`${process.env.PUBLIC_URL}/AdityaSinghResume.pdf`} download className="btn secondary">
           <FaDownload /> Download CV
         </a>
       </div>
