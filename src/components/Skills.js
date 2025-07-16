@@ -85,7 +85,7 @@ const Skills = () => {
           <span>Presentations</span>
           <span>Oratory</span>
           <span>Team Leadership</span>
-          <span>Agile Methodologies</span>
+          <span>Active Listening</span>
         </div>
       </div>
       </div>

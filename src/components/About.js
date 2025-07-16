@@ -5,7 +5,7 @@ const About = () => {
       <div className="about-content">
         <h2>About Me</h2>
         <p>
-          Hello! I'm <strong>Aditya</strong>, a driven Full Stack Developer with a strong foundation in computer science and a knack for crafting efficient, user-centric applications. My journey into tech is fueled by a desire to learn, innovate, and contribute to projects that make a difference. I thrive in collaborative environments and am always excited to tackle new challenges.
+          Hello! I'm <strong>Aditya</strong>, — a passionate Full-Stack Developer with 2 years of hands-on experience building scalable, high-performance web applications. Skilled in React, Node.js, Express, and PostgreSQL, I focus on crafting clean architectures, responsive designs, and robust backend services. I’ve delivered production-ready features in agile teams, collaborated across functions, and ensured performance and quality at every step. Driven by curiosity and a growth mindset, I’m always learning and love solving real-world problems through code.
         </p>
       </div>
       <div className="education-section">
