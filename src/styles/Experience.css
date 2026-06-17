@@ -1,130 +1,124 @@
 .experience-section {
-    padding: 60px 20px;
-    background-color: #0a0d1a;
-    color: #ffffff;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  .experience-title {
-    text-align: center;
-    color: #00ffff;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-  }
-  
-  .timeline {
-    position: relative;
-    margin-left: 40px;
-    border-left: 2px solid #00ffff44;
-    padding-left: 25px;
-    max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 40px;
-  }
-  
-  .timeline-icon {
-    position: absolute;
-    left: -45px;
-    top: 0;
-    background: #00ffff;
-    color: #0a0d1a;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 1rem;
-  }
-  
-  .timeline-content {
-    background: #121428;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #00ffff33;
-  }
-  
-  .timeline-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .timeline-header h3 {
-    color: #00ffff;
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  
-  .timeline-date {
-    color: #ccc;
-    font-size: 0.9rem;
-  }
-  
-  .timeline-org {
-    color: #ff4f81;
-    margin: 0.4rem 0 0.7rem 0;
-    font-weight: 500;
-  }
-  
-  .timeline-content ul {
-    padding-left: 1.2rem;
-    margin: 0;
-  }
-  
-  .timeline-content li {
-    line-height: 1.6;
-    font-size: 0.95rem;
-  }
-  
-  /* Media Queries for responsiveness */
-  @media (max-width: 768px) {
-    .experience-section {
-      padding: 40px 15px;
-    }
-  
-    .timeline {
-      margin-left: 10px;
-      padding-left: 15px;
-    }
-  
-    .timeline-icon {
-      left: -30px;
-      padding: 8px;
-    }
-  
-    .timeline-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .timeline-header h3 {
-      font-size: 1.1rem;
-    }
-  
-    .timeline-date {
-      font-size: 0.85rem;
-      margin-top: 4px;
-    }
-  
-    .timeline-content {
-      padding: 1.2rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .experience-title {
-      font-size: 1.5rem;
-    }
-  
-    .timeline-header h3 {
-      font-size: 1rem;
-    }
-  
-    .timeline-content {
-      padding: 1rem;
-    }
-  }
-  
+  padding: 96px 24px;
+  background: var(--bg);
+}
+
+.experience-section > h2 {
+  text-align: center;
+  color: var(--accent);
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.experience-subtitle {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 64px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+  padding-left: 36px;
+  border-left: 2px solid var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Dot on the timeline line */
+.timeline-dot {
+  position: absolute;
+  left: -44px;
+  top: 14px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(0, 255, 255, 0.15);
+  border: 2px solid var(--bg);
+}
+
+/* Old icon styles — replaced by dot; kept for compat */
+.timeline-icon { display: none; }
+
+.timeline-content {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 24px 26px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: border-color var(--t), box-shadow var(--t);
+}
+
+.timeline-content:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow), var(--shadow-card);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.timeline-header h3 {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.timeline-date {
+  font-family: 'Fira Code', monospace;
+  color: var(--accent);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  background: var(--accent-dim);
+  padding: 3px 10px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+}
+
+.timeline-org {
+  color: var(--danger);
+  margin: 0 0 14px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.timeline-content ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.timeline-content li {
+  line-height: 1.7;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.timeline-content li:last-child { margin-bottom: 0; }
+
+@media (max-width: 768px) {
+  .experience-section { padding: 64px 20px; }
+  .timeline { padding-left: 24px; }
+  .timeline-dot { left: -31px; }
+  .timeline-content { padding: 20px; }
+  .timeline-header { flex-direction: column; }
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Experience.css';
-import { FaUserTie, FaUserGraduate, FaLaptopCode } from 'react-icons/fa';
 
 const experiences = [
   {
@@ -8,57 +7,57 @@ const experiences = [
     org: 'GlobalLogic India',
     date: 'Jul 2024 – Present',
     details: [
-      'Developing full-stack web applications, delivering new features and resolving bugs using modern tech stack.',
-      'Integrated Node.js, Express.js, and PostgreSQL into backend services and internal tools.',
+      'Own end-to-end feature development across full-stack applications using React, TypeScript, Node.js, and PostgreSQL — from requirements to production deployment.',
+      'Design and build RESTful APIs with Node.js/Express, handling database schema design, query optimisation, and third-party service integrations.',
+      'Drive code reviews, contribute to technical discussions, and help establish engineering best practices within cross-functional agile squads.',
     ],
-    icon: <FaUserTie  />,
   },
   {
     title: 'Trainee Software Engineer',
     org: 'GlobalLogic India',
     date: 'Sep 2023 – Jun 2024',
     details: [
-      'Contributed to a client-facing app using Redux Toolkit, TypeScript, Styled Components, and Material UI.',
-      'Followed agile processes and collaborated using Git and GitHub in cross-functional sprints.',
+      'Contributed to a high-traffic, client-facing application built with React, Redux Toolkit, TypeScript, Styled Components, and Material UI.',
+      'Delivered user stories consistently across sprints, collaborating with designers, QA engineers, and backend teams via Git/GitHub workflows.',
+      'Identified and abstracted repeated UI patterns into reusable components, improving consistency and reducing duplication across the codebase.',
     ],
-    icon: <FaLaptopCode  />,
   },
   {
     title: 'Software Engineer Intern',
     org: 'GlobalLogic India',
     date: 'Feb 2023 – Jun 2023',
     details: [
-      'Built mini-projects using React, Redux (basics), Bootstrap, HTML5, CSS3, and JSON Server to simulate full-stack development.',
+      'Built multiple full-stack projects using React, Redux, Bootstrap, HTML5, CSS3, and JSON Server — simulating real-world development workflows.',
+      'Completed an intensive training programme covering data structures, algorithms, and modern web technologies; received a strong performance evaluation.',
     ],
-    icon: <FaUserGraduate  />,
   },
 ];
 
-const Experience = () => {
-  return (
-    <section className="experience-section" id="experiences">
-      <h2 className="experience-title">Experience</h2>
-      <div className="timeline">
-        {experiences.map((exp, index) => (
-          <div key={index} className="timeline-item">
-            <div className="timeline-icon">{exp.icon}</div>
-            <div className="timeline-content">
-              <div className="timeline-header">
-                <h3>{exp.title}</h3>
-                <span className="timeline-date">{exp.date}</span>
-              </div>
-              <p className="timeline-org">{exp.org}</p>
-              <ul>
-                {exp.details.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
+const Experience = () => (
+  <section className="experience-section" id="experiences">
+    <h2 data-reveal>Experience</h2>
+    <p className="experience-subtitle" data-reveal="d1">Where I&apos;ve worked</p>
+
+    <div className="timeline">
+      {experiences.map((exp, index) => (
+        <div className="timeline-item" key={index} data-reveal={`d${index + 1}`}>
+          <div className="timeline-dot" />
+          <div className="timeline-content">
+            <div className="timeline-header">
+              <h3>{exp.title}</h3>
+              <span className="timeline-date">{exp.date}</span>
             </div>
+            <p className="timeline-org">{exp.org}</p>
+            <ul>
+              {exp.details.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
           </div>
-        ))}
-      </div>
-    </section>
-  );
-};
+        </div>
+      ))}
+    </div>
+  </section>
+);
 
 export default Experience;

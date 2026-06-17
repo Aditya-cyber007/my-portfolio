@@ -1,13 +1,14 @@
-import React from 'react'
-import '../styles/Footer.css'
+import React from 'react';
+import '../styles/Footer.css';
 
+const Footer = () => (
+  <footer className="footer">
+    Designed &amp; built by{' '}
+    <a href="https://github.com/Aditya-cyber007" target="_blank" rel="noopener noreferrer">
+      Aditya Pratap Singh
+    </a>{' '}
+    · {new Date().getFullYear()}
+  </footer>
+);
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      &copy; {new Date().getFullYear()} Aditya Pratap Singh. All rights reserved.
-    </footer>
-  )
-}
-
-export default Footer
+export default Footer;

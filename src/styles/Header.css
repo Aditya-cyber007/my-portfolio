@@ -3,18 +3,20 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #202233;
+  background: rgba(5, 8, 22, 0.75);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
   color: white;
-  padding: 15px 20px;
+  padding: 0 28px;
+  height: 64px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   z-index: 999;
   box-sizing: border-box;
-  /* smooth hide / show */
   transform: translateY(0);
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-              background-color 0.3s ease;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header--hidden {
@@ -22,43 +24,49 @@
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #00ffff;
+  font-family: 'Fira Code', monospace;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--accent);
   white-space: nowrap;
+  letter-spacing: -0.02em;
 }
 
 /* ── Desktop nav ── */
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 4px;
   align-items: center;
-  margin-right: 1rem;
 }
 
 .nav a {
-  color: #ccc;
+  color: var(--muted);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.25s ease;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: color var(--t), background var(--t);
   white-space: nowrap;
 }
 
 .nav a:hover {
-  color: #00ffff;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .resume-button {
-  border: 1px solid #00ffff;
-  padding: 5px 12px;
-  border-radius: 4px;
-  color: #00ffff !important;
-  transition: background-color 0.25s ease, color 0.25s ease !important;
+  margin-left: 8px;
+  border: 1px solid var(--border-hover) !important;
+  color: var(--accent) !important;
+  background: var(--accent-dim) !important;
+  transition: background var(--t), border-color var(--t) !important;
 }
 
 .resume-button:hover {
-  background-color: #00ffff;
-  color: #000 !important;
+  background: rgba(0, 255, 255, 0.2) !important;
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
 }
 
 /* ── Hamburger ── */
@@ -67,56 +75,60 @@
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
-  margin-right: 0.5rem;
+  padding: 4px;
 }
 
 .hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
+  width: 24px;
+  height: 2.5px;
+  background: var(--text);
   border-radius: 2px;
-  transition: all 0.3s ease;
   display: block;
+  transition: all 0.3s ease;
 }
 
-/* Animate to X when open */
-.hamburger.active span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-  transform: scaleX(0);
-}
-.hamburger.active span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
+.hamburger.active span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.active span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
 /* ── Mobile ── */
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
+  .hamburger { display: flex; }
 
   .nav {
     position: absolute;
-    top: 60px;
+    top: 64px;
     left: 0;
     right: 0;
-    background-color: #0f1123;
+    background: rgba(5, 8, 22, 0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 24px 20px;
-    margin-right: 0;
-    /* slide in/out instead of display:none toggle */
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.35s ease, opacity 0.3s ease, padding 0.35s ease;
+    transition: max-height 0.35s ease, opacity 0.3s ease;
   }
 
   .nav.open {
-    max-height: 500px;
+    max-height: 520px;
     opacity: 1;
+    padding: 12px 0 16px;
+  }
+
+  .nav a {
+    padding: 12px 24px;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+
+  .resume-button {
+    margin: 8px 24px 0 !important;
+    border-radius: 8px !important;
+    text-align: center;
   }
 }
