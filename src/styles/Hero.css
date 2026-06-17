@@ -137,6 +137,31 @@
   }
 }
 
+/* Mobile responsive font scaling */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 2.8rem;
+  }
+  .typed-text {
+    font-size: 1.6rem;
+  }
+  .hero-summary {
+    font-size: 1rem;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 2rem;
+  }
+  .typed-text {
+    font-size: 1.3rem;
+  }
+  .hero-summary {
+    font-size: 0.95rem;
+  }
+}
 
 .btn {
   padding: 10px 20px;

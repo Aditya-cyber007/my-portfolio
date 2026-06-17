@@ -35,7 +35,7 @@ const Header = () => {
         <a href="#about" onClick={(e) => handleScroll(e, 'about')}>About</a>
         <a href="#skills" onClick={(e) => handleScroll(e, 'skills')}>Skills</a>
         <a href="#projects" onClick={(e) => handleScroll(e, 'projects')}>Projects</a>
-<       a href="#experiences" onClick={(e) => handleScroll(e, 'experiences')}>Experience</a>
+        <a href="#experiences" onClick={(e) => handleScroll(e, 'experiences')}>Experience</a>
         <a href="#contact" onClick={(e) => handleScroll(e, 'contact')}>Contact</a>
 
         <a

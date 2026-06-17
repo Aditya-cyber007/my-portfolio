@@ -10,10 +10,8 @@ const Contact = () => {
         I'm currently open to new opportunities and collaborations. Whether you have a project in mind, a question, or just want to say hi, my inbox is always open. I'll try my best to get back to you!
       </p>
       <a
-        href="https://mail.google.com/chat/u/0/#chat/wt:adityapratap620@gmail.com"
+        href="mailto:adityapratap620@gmail.com"
         className="contact-button"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         Say Hello
       </a>
