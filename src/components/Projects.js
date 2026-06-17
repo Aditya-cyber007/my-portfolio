@@ -19,12 +19,12 @@ const projects = [
     techStack: ['React', 'Redux', 'Node.js', 'Express', 'PostgreSQL', 'Tailwind'],
   },
   {
-    title: 'KindKart – Donation Marketplace',
-    description: 'Community platform where users donate and request items like books, clothes, and gadgets. Includes admin moderation, browse/search, and listing workflows.',
-    image: 'https://plus.unsplash.com/premium_photo-1661962834814-2086d028cda1?w=600&auto=format&fit=crop&q=70',
-    liveLink: '#',
-    detailsLink: 'https://github.com/Aditya-cyber007/Donation-Marketplace-KindKart-App-',
-    techStack: ['React', 'Redux', 'Node.js', 'Express', 'PostgreSQL', 'Tailwind'],
+    title: 'Developer Portfolio',
+    description: 'Personal portfolio built with React featuring glassmorphism header, scroll-reveal animations, responsive design, and a design-token CSS system. Deployed on Vercel with GitHub auto-deploy.',
+    image: 'https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&auto=format&fit=crop&q=70',
+    liveLink: 'https://aditya-pratap-portfolio.vercel.app',
+    detailsLink: 'https://github.com/Aditya-cyber007/my-portfolio',
+    techStack: ['React', 'CSS3', 'React Icons', 'Vercel'],
   },
 ];
 

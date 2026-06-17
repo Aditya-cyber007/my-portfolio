@@ -20,8 +20,9 @@ const About = () => {
         <div className="education-cards">
           <div className="edu-card" data-reveal="d1">
             <h4>🎓 GLA University, Mathura</h4>
-            <p>B.E. in Computer Science &amp; Engineering</p>
-            <p>Aug 2019 – Jul 2023</p>
+            <p>B.Tech in Computer Science</p>
+            <p>Specialization: AI &amp; Machine Learning</p>
+            <p>Aug 2019 – Jun 2023</p>
             <p className="highlight">CGPA: 8.2 / 10</p>
           </div>
 

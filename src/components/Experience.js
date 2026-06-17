@@ -3,32 +3,45 @@ import '../styles/Experience.css';
 
 const experiences = [
   {
-    title: 'Associate Software Engineer',
-    org: 'GlobalLogic India',
-    date: 'Jul 2024 – Present',
+    title: 'Software Engineer',
+    org: 'GlobalLogic, Noida',
+    date: 'Oct 2025 – Present',
     details: [
-      'Own end-to-end feature development across full-stack applications using React, TypeScript, Node.js, and PostgreSQL — from requirements to production deployment.',
-      'Design and build RESTful APIs with Node.js/Express, handling database schema design, query optimisation, and third-party service integrations.',
-      'Drive code reviews, contribute to technical discussions, and help establish engineering best practices within cross-functional agile squads.',
+      'Build and maintain large-scale React + TypeScript applications supporting 15K+ active users.',
+      'Implement advanced state management with Redux Toolkit and RTK Query for complex data workflows.',
+      'Integrate secure REST and GraphQL services with centralised authentication and logging.',
+      'Automate build, testing, and release pipelines using Docker and GitHub Actions.',
+      'Conduct PR reviews, mentor junior developers, and drive adoption of engineering best practices.',
+    ],
+  },
+  {
+    title: 'Associate Software Engineer',
+    org: 'GlobalLogic, Noida',
+    date: 'Jul 2024 – Sep 2025',
+    details: [
+      'Delivered 12+ customer-facing features using React, Redux Toolkit, TypeScript, and GraphQL — boosted platform engagement by 35%.',
+      'Integrated GraphQL and RESTful APIs to optimise data flow, cutting page load time by 28%.',
+      'Automated deployments with Docker and GitHub Actions, shortening release cycles from 7 days to 1 day.',
+      'Mentored 3 graduate trainees; 2 promoted to Associate Engineer within 9 months.',
     ],
   },
   {
     title: 'Trainee Software Engineer',
-    org: 'GlobalLogic India',
+    org: 'GlobalLogic, Noida',
     date: 'Sep 2023 – Jun 2024',
     details: [
-      'Contributed to a high-traffic, client-facing application built with React, Redux Toolkit, TypeScript, Styled Components, and Material UI.',
-      'Delivered user stories consistently across sprints, collaborating with designers, QA engineers, and backend teams via Git/GitHub workflows.',
-      'Identified and abstracted repeated UI patterns into reusable components, improving consistency and reducing duplication across the codebase.',
+      'Fixed 60+ bugs and streamlined UI workflows, reducing support tickets by 18%.',
+      'Built and tested RESTful and GraphQL APIs; improved average API query latency by 30%.',
+      'Consistently met sprint goals and presented deliverables in Agile ceremonies tracked via JIRA.',
     ],
   },
   {
-    title: 'Software Engineer Intern',
-    org: 'GlobalLogic India',
-    date: 'Feb 2023 – Jun 2023',
+    title: 'Software Engineer Trainee (Internship)',
+    org: 'GlobalLogic, Noida',
+    date: 'Feb 2023 – Aug 2023',
     details: [
-      'Built multiple full-stack projects using React, Redux, Bootstrap, HTML5, CSS3, and JSON Server — simulating real-world development workflows.',
-      'Completed an intensive training programme covering data structures, algorithms, and modern web technologies; received a strong performance evaluation.',
+      'Completed an intensive React + Redux training programme, building responsive UIs with Tailwind CSS and Styled Components.',
+      'Practised modern developer workflows using Git, GitHub, Docker, and Postman for collaboration and continuous delivery.',
     ],
   },
 ];
@@ -40,7 +53,7 @@ const Experience = () => (
 
     <div className="timeline">
       {experiences.map((exp, index) => (
-        <div className="timeline-item" key={index} data-reveal={`d${index + 1}`}>
+        <div className="timeline-item" key={index} data-reveal={`d${Math.min(index + 1, 5)}`}>
           <div className="timeline-dot" />
           <div className="timeline-content">
             <div className="timeline-header">

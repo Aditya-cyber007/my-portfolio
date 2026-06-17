@@ -14,9 +14,9 @@ function Hero() {
       <h2 className="typed-text">
         <ReactTyped
           strings={[
-            'Full Stack Developer.',
+            'Software Engineer.',
+            'React Developer.',
             'I build things for the web.',
-            'I love to code.',
             'I solve real problems.',
           ]}
           typeSpeed={48}
@@ -27,8 +27,8 @@ function Hero() {
       </h2>
 
       <p className="hero-summary">
-        3+ years building scalable web applications at GlobalLogic India.
-        React · TypeScript · Node.js · Next.js · PostgreSQL.
+        Software Engineer at GlobalLogic · 3+ years building scalable React applications
+        used by 15K+ users. TypeScript · Redux Toolkit · GraphQL · Node.js.
       </p>
 
       <div className="hero-buttons">
@@ -53,7 +53,7 @@ function Hero() {
           <FaGithub />
         </a>
         <a
-          href="https://www.linkedin.com/in/aditya-pratap-singh-b6ba901ba/"
+          href="https://www.linkedin.com/in/adityapratap00/"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
