@@ -1,15 +1,15 @@
 .hero {
-  min-height: 92vh;
+  position: relative;
+  min-height: 100vh;
   background-color: #0f1123;
   color: #ccc;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 20px 60px;
+  padding: 80px 20px 80px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 80px;
 }
 
 .intro-text {
@@ -22,7 +22,7 @@
   font-size: 4.5rem;
   font-weight: bold;
   color: #fff;
-  margin: 5px 0; 
+  margin: 5px 0;
 }
 
 .dot {
@@ -32,7 +32,7 @@
 .typed-text {
   font-size: 2.5rem;
   color: #aaa;
-  margin: 10px 0; 
+  margin: 10px 0;
   min-height: 40px;
 }
 
@@ -50,13 +50,6 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
-}
-.hero-socials {
-  margin-top: 30px;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .hero-socials {
@@ -78,93 +71,40 @@
   transform: scale(1.2);
 }
 
-
-.social-link:hover {
-  color: #00ffff;
-  border-color: #00ffff;
-}
-
+/* Scroll-down arrow — centered at bottom of hero section */
 .scroll-down {
   position: absolute;
-  bottom: 50px;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: #00ffff;
-  font-weight: 500;
   text-decoration: none;
-  animation: bounce 2s infinite;
+  animation: bounce 2s ease-in-out infinite;
   cursor: pointer;
-}
-
-.scroll-text {
-  margin-bottom: 5px;
-  font-size: 14px;
+  line-height: 1;
 }
 
 .scroll-icon {
-  font-size: 24px;
+  font-size: 22px;
+  display: flex;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  40% {
-    transform: translateX(-50%) translateY(5px);
-  }
-  60% {
-    transform: translateX(-50%) translateY(3px);
-  }
-}
 .scroll-down:hover {
   color: #fff;
 }
 
-
-/* Bounce animation */
+/* bounce must keep translateX so the element doesn't snap to center */
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(5px);
-  }
-  60% {
-    transform: translateY(3px);
-  }
+  0%,  100% { transform: translateX(-50%) translateY(0);   }
+  50%        { transform: translateX(-50%) translateY(8px); }
 }
 
-/* Mobile responsive font scaling */
-@media (max-width: 768px) {
-  .hero-name {
-    font-size: 2.8rem;
-  }
-  .typed-text {
-    font-size: 1.6rem;
-  }
-  .hero-summary {
-    font-size: 1rem;
-    margin: 20px auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-name {
-    font-size: 2rem;
-  }
-  .typed-text {
-    font-size: 1.3rem;
-  }
-  .hero-summary {
-    font-size: 0.95rem;
-  }
-}
-
+/* ── Buttons ── */
 .btn {
-  padding: 10px 20px;
+  padding: 10px 22px;
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
@@ -193,4 +133,17 @@
 .secondary:hover {
   background-color: #00ffff;
   color: #000;
+}
+
+/* ── Mobile responsive ── */
+@media (max-width: 768px) {
+  .hero-name    { font-size: 2.8rem; }
+  .typed-text   { font-size: 1.6rem; }
+  .hero-summary { font-size: 1rem; margin: 20px auto; }
+}
+
+@media (max-width: 480px) {
+  .hero-name    { font-size: 2rem; }
+  .typed-text   { font-size: 1.3rem; }
+  .hero-summary { font-size: 0.95rem; }
 }
